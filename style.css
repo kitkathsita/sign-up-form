@@ -53,6 +53,7 @@ body {
 
 .part2 {
   font-size: 20px;
+  margin-bottom: 5vh;
 }
 
 .general {
@@ -72,4 +73,24 @@ body {
 #inputID {
   height: 50px;
   font-size: 20px;
+}
+
+.buttonAccount {
+  margin-top: 5vh;
+}
+
+button {
+  font-size: 1.5vw;
+  width: 16vw;
+  height: 5vh;
+  background-color: white;
+  border-bottom: black solid;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }

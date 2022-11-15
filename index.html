@@ -26,12 +26,12 @@
 
             <div class="forClass Name">
               <label for="name">First name:</label>
-              <input type="text" name="name" id="inputID">
+              <input type="text" name="name" id="inputID" placeholder="Kath" required>
             </div>
 
             <div class="forClass LastName">
               <label for="lastName">Last name:</label>
-              <input type="text" name="lastname" id="inputID">
+              <input type="text" name="lastname" id="inputID" placeholder="Guerrero" required>
             </div>
 
           </div>
@@ -40,12 +40,12 @@
 
             <div class="forClass Email">
               <label for="email">Email:</label>
-              <input type="text" name="email" id="inputID">
+              <input type="text" name="email" id="inputID" placeholder="anemail@email.com" required>
             </div>
 
             <div class="forClass Cellphone">
               <label for="cellphone">Cellphone number:</label>
-              <input type="text" name="cellphone" id="inputID">
+              <input type="text" name="cellphone" id="inputID" placeholder="1234567890" min="10" max="10" required>
             </div>
 
           </div>
@@ -53,19 +53,23 @@
           <div class="general passWord">
 
             <div class="forClass password">
-              <label for="password">PassWord:</label>
-              <input type="text" name="password" id="inputID">
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="inputID" placeholder="yourpassword" required>
             </div>
 
             <div class="forClass repeatPassword">
               <label for="repeat">Confirm password:</label>
-              <input type="text" name="repeat" id="inputID">
+              <input type="password" name="repeat" id="inputID" placeholder="youpassword" required>
             </div>
           </div>
+          <div class="buttonAccount">
+            <button type="submit">Create account</button>
+          </div>
+          
         </form>
       </div>
       <div class="part3">
-        <button>Create account</button>
+        Already have an account? Sign in.
       </div>
     </div>
   </div>
