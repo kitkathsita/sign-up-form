@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up form</title>
@@ -12,26 +13,29 @@
 <body>
   <div class="content">
     <div class="pagename">
-      <p class="titlepage">kath</p>
+      <div class="titlepage">
+        <i class="fa-solid fa-shield-cat"></i>
+        <h1>meoooow</h1>
+      </div>
     </div>
     <div class="form">
       <div class="part1">
         This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
       </div>
       <div class="part2">
-        <h1>Let's do this!</h1>
-        <form action="" method="post">
+        <h2>Let's do this!</h2>
+        <form action="#">
 
           <div class="general nameInfo">
 
             <div class="forClass Name">
               <label for="name">First name:</label>
-              <input type="text" name="name" id="inputID" placeholder="Kath" required>
+              <input type="text" name="name" class="inputID" placeholder="Kath" required>
             </div>
 
             <div class="forClass LastName">
               <label for="lastName">Last name:</label>
-              <input type="text" name="lastname" id="inputID" placeholder="Guerrero" required>
+              <input type="text" name="lastname" class="inputID" placeholder="Guerrero" required>
             </div>
 
           </div>
@@ -40,12 +44,12 @@
 
             <div class="forClass Email">
               <label for="email">Email:</label>
-              <input type="text" name="email" id="inputID" placeholder="anemail@email.com" required>
+              <input type="text" name="email" class="inputID" placeholder="anemail@email.com" required>
             </div>
 
             <div class="forClass Cellphone">
               <label for="cellphone">Cellphone number:</label>
-              <input type="text" name="cellphone" id="inputID" placeholder="1234567890" min="10" max="10" required>
+              <input type="text" name="cellphone" class="inputID" placeholder="1234567890" min="10" max="10" required>
             </div>
 
           </div>
@@ -54,16 +58,17 @@
 
             <div class="forClass password">
               <label for="password">Password:</label>
-              <input type="password" name="password" id="inputID" placeholder="yourpassword" required>
+              <input type="password" name="password" class="inputID passwordone" placeholder="yourpassword" required>
             </div>
 
             <div class="forClass repeatPassword">
-              <label for="repeat">Confirm password:</label>
-              <input type="password" name="repeat" id="inputID" placeholder="youpassword" required>
+              <label for="repeat" id="CPassword">Confirm password:</label>
+              <input type="password" name="repeat" class="inputID passwordtwo" placeholder="youpassword" required>
             </div>
           </div>
+
           <div class="buttonAccount">
-            <button type="submit">Create account</button>
+            <button type="submit" class="create" id="createID">Create account</button>
           </div>
           
         </form>

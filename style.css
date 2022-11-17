@@ -6,14 +6,14 @@
 
 body {
   display: flex;
-  width: var(--width-page);
   margin: 0%;
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(./images/fondo2.jpg);
 }
 
 .content {
+  width: 100vw;
+  height: 100vh;
   color: black;
   display: flex;
   width: var(--width-page);
@@ -23,27 +23,39 @@ body {
 
 .pagename {
   width: 40vw;
-  height: 18vh;
-  position: relative;
-  top: 20vh;
+  height: 100vh;
   background-color: var(--color-page);
   padding: 0%;
-  opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(./images/pushen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .titlepage {
   margin: 0%;
+  width: 37vw;
   font-size: clamp(100px, 80px, 15vw);
+  background-color:rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 20vh;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+i {
+  font-size: 5vw;
 }
 
 .form {
   background-color: var(--color-page);
   width: 60vw;
-  height: var(--height-page);
   padding: 10vw 10vh;
 }
 
@@ -70,7 +82,7 @@ body {
   height: 5vh;
 }
 
-#inputID {
+.inputID {
   height: 50px;
   font-size: 20px;
 }
@@ -88,6 +100,10 @@ button {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+p {
+  width: 5vw;
 }
 
 button:hover {
